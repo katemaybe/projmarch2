@@ -1,0 +1,54 @@
+.about__inner {
+    @extend .container;
+    background-color: $c-brand-primary;
+    padding: 6.25rem 13.8rem 0;
+}
+.about__container {
+}
+.about__title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.about__text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6875rem;
+}
+.about__btn {
+    margin: 0 auto;
+    display: block;
+    margin-top: 3rem;
+  
+    p{
+        color: #2A2C3D;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 2rem 1.44rem;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+.btn {
+
+}
+.about__img {
+    align-self: flex-end;
+}
+.about__image {
+}
+.meeting__img {
+}

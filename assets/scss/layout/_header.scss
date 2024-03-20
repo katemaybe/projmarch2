@@ -1,0 +1,43 @@
+.header__inner {
+    background-color: $c-brand-primary;
+    @extend .container;
+
+font-size: 1.25rem;
+font-weight: 400;
+   
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    a{
+        color: $c-font-secondary;
+    }
+
+    
+}
+.logo__container {
+    display: flex;
+    align-items: center;
+    p{
+        color: $c-font-secondary;
+    }
+    
+}
+
+
+.logo__img {
+    padding-right: 0.5rem;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:2.5rem; 
+}
+.menu__item {
+}
+.menu__link {
+}

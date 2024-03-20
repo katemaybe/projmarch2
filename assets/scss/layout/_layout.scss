@@ -1,0 +1,41 @@
+body {
+    background-color: $c-bg-primary;
+    overflow-x: hidden; 
+
+    &.is-modal-open {
+        overflow: hidden;
+        max-height: 100vh;
+    }
+
+}
+
+body {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: $c-bg-primary;
+    overflow-x: hidden;
+    font-family: $font-primary;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    &.is-modal-open {
+        overflow: hidden;
+        max-height: 100vh;
+    }
+
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+.container {
+max-width: 90rem;
+padding: 3.75rem;
+width: 100%;
+margin: 0 auto;
+
+}
+

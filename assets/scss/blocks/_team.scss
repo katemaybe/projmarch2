@@ -1,0 +1,44 @@
+.team {
+}
+.team__inner {
+    @extend .container;
+    background:  linear-gradient( $c-brand-primary 30%,$c-bg-primary 7%);
+}
+.about__image {
+ 
+}
+.meeting__img {
+    width: 100%;
+    text-align: center;
+}
+.numbers__left {
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:10rem;
+}
+.numbers__element {
+    width: 10.3rem;
+}
+.number {
+    color: #2A2C3D;
+
+text-align: center;
+font-family: "Open Sans";
+font-size: 2rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.numbers__text {
+    color: #2A2C3D;
+
+text-align: center;
+font-family: "Open Sans";
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

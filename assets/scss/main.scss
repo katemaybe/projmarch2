@@ -1,0 +1,25 @@
+@import "vendor/reset";
+@import "vendor/include-media";
+
+@import "core/fonts";
+@import "core/mixins";
+@import "core/variables";
+
+@import "components/typography";
+@import "components/buttons";
+@import "components/links";
+
+@import "layout/layout";
+@import "layout/header";
+@import "layout/footer";
+
+@import "blocks/about";
+@import "blocks/team";
+@import "blocks/services";
+@import "blocks/projects";
+@import "blocks/reviews";
+@import "blocks/contact";
+
+
+
+
