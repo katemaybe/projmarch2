@@ -1,3 +1,6 @@
+.reviews{
+    padding: 3rem 0;
+}
 .reviews__inner {
     @extend .container
 }
@@ -15,6 +18,7 @@
     padding-bottom: 2.5rem;
 }
 .reviews__features {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -22,6 +26,7 @@
 
 }
 .reviews__element {
+    flex: 1;
     padding-top: 1.3rem;
     max-width: 23rem;
     display: inline-flex;
@@ -36,6 +41,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 1.6875rem;
+        opacity: 0.71;
     }
     h5{
         font-size: 1.5rem;
@@ -47,6 +53,7 @@
 .reviews_text {
 }
 .reviews__img {
+    width: 100%;
 }
 
 .reviews__people {

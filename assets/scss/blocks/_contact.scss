@@ -1,9 +1,11 @@
 
 .contact__inner {
     @extend .container;
-    background-color: $c-brand-primary;
+    
 }
 .contact {
+padding: 3.75rem 0;
+background-color: $c-brand-primary;
 font-size: 3rem;
 font-style: normal;
 font-weight: 700;

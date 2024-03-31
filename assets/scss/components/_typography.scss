@@ -32,6 +32,7 @@ h4 {
 
 h5 {
     @include adaptive-font(18, 20);
+    opacity: 0.71;
 }
 
 hr {
@@ -44,7 +45,7 @@ hr {
 a {
     color: $c-font-primary;
     text-decoration: none;
-    transition: var(--default-transition);
+    transition: .3s ease;
 
     @include hover {
         color: $c-brand-primary;

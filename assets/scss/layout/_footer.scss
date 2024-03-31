@@ -1,11 +1,17 @@
+footer{
+    padding-top:8.25rem;
+    padding-bottom:4rem;
+}
 .footer__inner{
-    padding-top:7.25rem;
-    padding-bottom:7.25rem;
     @extend .container;
         display: flex;
         justify-content: space-between;
         align-items: start; 
         flex-flow: row wrap;
+        .title {
+            font-weight: bold;
+            opacity: 100%;
+        }
 }
 
 
@@ -77,13 +83,13 @@
     font-weight: 400;
     line-height: 1.6875rem; 
     opacity: 0.71;
+    a{
+        transition: .3s ease;
+    }
     
 }
 
-.link-main {
-    font-weight: bold;
-    opacity: 100%;
-}
+
 
     .socials-bottom{
 

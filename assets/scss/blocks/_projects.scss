@@ -1,3 +1,7 @@
+.projects {
+    padding: 3.75rem 0;
+}
+
 .projects__inner {
     @extend .container
 }
@@ -16,6 +20,8 @@
 
 }
 .projects__features {
+    padding-top: 2.5rem;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,15 +29,17 @@
 
 }
 .projects__element {
-    max-width: 22.5rem;
+    flex: 1;
     p{
         font-size: 1.125rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.6875rem;
+        opacity: 0.71;
         }
 }
 .projects__img {
+    width: 100%;
 }
 .projects_text {
     font-size: 1.5rem;

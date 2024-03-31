@@ -1,17 +1,18 @@
 .team {
+    padding-bottom: 6rem;
 }
 .team__inner {
     @extend .container;
-    background:  linear-gradient( $c-brand-primary 30%,$c-bg-primary 7%);
+    
 }
-.about__image {
- 
+.team {
+    background:  linear-gradient( $c-brand-primary 30%,$c-bg-primary 7%);
 }
 .meeting__img {
     width: 100%;
     text-align: center;
 }
-.numbers__left {
+.numbers {
     padding-top: 3rem;
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +23,7 @@
 .numbers__element {
     width: 10.3rem;
 }
-.number {
+.numbers__value {
     color: #2A2C3D;
 
 text-align: center;

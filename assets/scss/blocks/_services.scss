@@ -1,5 +1,9 @@
 .services__inner {
     @extend .container;
+    
+}
+.services{
+    padding: 3.75rem 0;
     background: #F9F9F9;
 }
 .services__header{
@@ -15,13 +19,16 @@
     line-height: normal;
 
 }
-.first__row {
-        padding-top: 2.5rem;
+.row{
+
         padding-bottom: 3.38rem;
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
         gap:8.75rem;
+}
+.services__features{
+    padding-top: 2.5rem;
 }
 .services-features__element {
     padding: 2rem 1.5rem;
@@ -34,6 +41,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.6875rem;
+    opacity: 0.71;
     }
 
 }
@@ -47,6 +55,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    
 }
 .second__row {
     display: flex;
