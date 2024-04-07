@@ -18,17 +18,18 @@
     padding-bottom: 2.5rem;
 }
 .reviews__features {
+    padding-top: 2.5rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap:3.12rem;
+    gap:3.44rem;
 
 }
 .reviews__element {
+    justify-content: space-between;
     flex: 1;
     padding-top: 1.3rem;
-    max-width: 23rem;
     display: inline-flex;
     min-height: 7.6rem;
     padding: 1.5rem;
@@ -43,7 +44,8 @@
         line-height: 1.6875rem;
         opacity: 0.71;
     }
-    h5{
+    h3{
+        opacity: 1;
         font-size: 1.5rem;
         font-style: normal;
         font-weight: 600;

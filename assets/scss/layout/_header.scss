@@ -40,8 +40,9 @@ font-weight: 400;
     flex-wrap: wrap;
     align-items: center;
     gap:2.5rem; 
+    
 }
-.menu__item {
-}
-.menu__link {
+.menu__link:hover {
+    color: $c-font-primary;
+  
 }
