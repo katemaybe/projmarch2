@@ -7,6 +7,10 @@
 }
 .team {
     background:  linear-gradient( $c-brand-primary 30%,$c-bg-primary 7%);
+    @include media('<desktop') {
+        background:  linear-gradient( $c-brand-primary 20%,$c-bg-primary 7%);
+        
+    }
 }
 .meeting__img {
     width: 100%;

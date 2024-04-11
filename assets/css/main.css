@@ -136,6 +136,56 @@ a {
     a:hover {
       color: #2F6B4F; } }
 
+.btn {
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 1.4375rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: .3s ease;
+  background: #fff; }
+  .btn span {
+    color: #2A2C3D;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: .3s ease; }
+  .btn svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: none;
+    stroke: #000;
+    transition: .3s ease; }
+  @media (min-width: 1025px) {
+    .btn:hover {
+      background: #000; }
+      .btn:hover span {
+        color: #fff; }
+      .btn:hover svg {
+        stroke: #fff; } }
+
+.socials {
+  display: flex;
+  align-items: center; }
+
+.socials__item {
+  margin-right: 1.5rem; }
+
+@media (min-width: 1025px) {
+  .socials__link:hover svg {
+    fill: #2F6B4F; } }
+
+.socials__link svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #2A2C3D;
+  transition: .3s ease; }
+
 body {
   background-color: #FFF;
   overflow-x: hidden; }
@@ -201,6 +251,51 @@ body {
 .menu__link:hover {
   color: #2A2C3D; }
 
+.menu__toggle {
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 3; }
+  @media (min-width: 1025px) {
+    .menu__toggle {
+      display: none; } }
+  .menu__toggle.--opened span:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px); }
+  .menu__toggle.--opened span:nth-child(2) {
+    opacity: 0; }
+  .menu__toggle.--opened span:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px); }
+  .menu__toggle span {
+    width: 33px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    display: block; }
+
+@media (max-width: 1024px) {
+  .menu__inner {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #2F6B4F;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .menu__inner.--opened {
+      opacity: 1;
+      visibility: visible; }
+    .menu__inner .menu {
+      flex-direction: column; } }
+
 footer {
   padding-top: 8.25rem;
   padding-bottom: 4rem; }
@@ -210,6 +305,9 @@ footer {
   justify-content: space-between;
   align-items: start;
   flex-flow: row wrap; }
+  @media (max-width: 1024px) {
+    .footer__inner {
+      flex-direction: column; } }
 
 .footer__title {
   opacity: 100%;
@@ -219,7 +317,7 @@ footer {
   line-height: normal; }
 
 .footer__socials {
-  width: 32rem;
+  max-width: 32rem;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -245,7 +343,7 @@ footer {
 
 .socials-menu {
   display: flex;
-  width: 32rem; }
+  max-width: 32rem; }
 
 .footer h6 {
   float: left; }
@@ -256,6 +354,12 @@ footer {
   flex-flow: row wrap;
   float: left;
   gap: 6.31rem; }
+  @media (max-width: 1024px) {
+    .links {
+      flex-direction: column;
+      align-self: center;
+      gap: 1rem;
+      margin-top: 2rem; } }
 
 .footer__about {
   font-size: 1.8rem;
@@ -284,6 +388,20 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem; }
+  @media (max-width: 1024px) {
+    .socials-bottom {
+      visibility: hidden; } }
+
+.socials {
+  display: flex;
+  justify-content: center; }
+
+.socials-bottom-mobile {
+  visibility: hidden; }
+  @media (max-width: 1024px) {
+    .socials-bottom-mobile {
+      visibility: visible;
+      margin: 0 auto; } }
 
 .text__bottom {
   font-size: 1.125rem;
@@ -340,6 +458,9 @@ footer {
 
 .team {
   background: linear-gradient(#2F6B4F 30%, #FFF 7%); }
+  @media (max-width: 1024px) {
+    .team {
+      background: linear-gradient(#2F6B4F 20%, #FFF 7%); } }
 
 .meeting__img {
   width: 100%;
@@ -414,7 +535,10 @@ footer {
     opacity: 0.71; }
 
 .services-features__img {
-  padding-top: 2rem; }
+  width: 2rem;
+  height: 2rem;
+  fill: #2A2C3D;
+  transition: .3s ease; }
 
 .features_text {
   padding-top: 1rem;
@@ -454,6 +578,9 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 3.12rem; }
+  @media (max-width: 1024px) {
+    .projects__features {
+      flex-direction: column; } }
 
 .projects__element {
   flex: 1; }
@@ -496,6 +623,9 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 3.44rem; }
+  @media (max-width: 1024px) {
+    .reviews__features {
+      flex-direction: column; } }
 
 .reviews__element {
   justify-content: space-between;

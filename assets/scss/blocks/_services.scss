@@ -46,7 +46,10 @@
 
 }
 .services-features__img {
-    padding-top: 2rem;
+    width: 2rem;
+      height: 2rem;
+      fill: #2A2C3D;
+      transition: .3s ease;
 }
 .features_text {
     padding-top: 1rem;

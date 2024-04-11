@@ -1,0 +1,43 @@
+.btn {
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 1.4375rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: .3s ease;
+    background: #fff;
+  
+    span {
+      color: #2A2C3D;
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      transition: .3s ease;
+    }
+  
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: none;
+      stroke: #000;
+      transition: .3s ease;
+    }
+  
+    @include hover() {
+      background: #000;
+  
+      span {
+        color: #fff;
+      }
+  
+      svg {
+        stroke: #fff;
+      }
+    }
+  
+  }

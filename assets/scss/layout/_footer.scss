@@ -8,6 +8,9 @@ footer{
         justify-content: space-between;
         align-items: start; 
         flex-flow: row wrap;
+        @include media('<desktop') {
+            flex-direction: column;
+        }
        
 }
 .footer__title {
@@ -19,16 +22,18 @@ line-height: normal;
 }
 
 .footer__socials{
-    width: 32rem;
+    max-width: 32rem;
     display: flex;
     justify-content: space-between;
     align-items: start; 
     flex-flow: row wrap;
     gap: 2rem;
+    
 
 }
 .logo-bottom {
     float: left;
+    
 }
 .footer__logo{
     display: flex;
@@ -47,7 +52,8 @@ line-height: normal;
 }
 .socials-menu {
     display: flex;
-    width: 32rem;
+    max-width: 32rem;
+    
 
 }
 
@@ -60,6 +66,12 @@ line-height: normal;
     flex-flow: row wrap;
     float: left;
     gap: 6.31rem;
+    @include media('<desktop') {
+        flex-direction: column;
+        align-self: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
     
 }
 
@@ -98,6 +110,23 @@ line-height: normal;
         flex-wrap: wrap;
         justify-content: center;
         gap: 1.5rem;
+        @include media('<desktop') {
+            visibility: hidden;
+        }
+        
+    }
+    .socials{
+        display: flex;
+        justify-content: center;
+    }
+    .socials-bottom-mobile{
+        
+        visibility: hidden;
+        @include media('<desktop') {
+            visibility:visible;
+            margin: 0 auto;
+            
+        }
         
     }
 

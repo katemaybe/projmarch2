@@ -24,6 +24,9 @@
     flex-wrap: wrap;
     justify-content: center;
     gap:3.44rem;
+    @include media('<desktop') {
+        flex-direction: column;
+    }
 
 }
 .reviews__element {
